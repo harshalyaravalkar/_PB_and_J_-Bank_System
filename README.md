@@ -1,4 +1,4 @@
-# _PB_and_J_-Bank_System
+# Online_Banking_Python-project
 Welcome to the Online Banking Project repository.
 <br>
 This Python-based project simulates the core functionalities of an online banking system. Whether you're a developer looking to explore the code or someone interested in understanding how online banking systems work at a technical level, this repository is designed to provide basic python code and hands-on learning experience.
