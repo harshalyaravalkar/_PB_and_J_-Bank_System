@@ -64,7 +64,7 @@ def main():
             pin = input("Set Your Password: ")
             while True :
                 gender = input("Enter Your gender (F/M): ").lower()
-                if gender.isalpha() and gender=="f" or gender=="m":
+                if gender.isalpha() and gender=="f" or gender=="m" or gender=="male" or gender=="female":
                     break
                 print("invalid input")
             # This code above ensures gender input is alphabets and either "f" or "m".
