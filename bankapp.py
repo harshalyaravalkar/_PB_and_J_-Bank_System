@@ -51,7 +51,7 @@ def main():
         print("WELCOME TO PB&J BANK".center(40,"-"))
         print("Digital Banking Service".center(40,"~"))
         print("\nUser wants to \n1. Create Account \n2. Login \n3. Exit")
-        # Above is our main menu where user creates an bank account
+        # Above is our main menu where user creates a bank account
         c = input("Enter your selection: ")
 
         if(c=="1"):
