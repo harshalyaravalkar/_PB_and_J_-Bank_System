@@ -110,7 +110,7 @@ def main():
                     elif(c=="3"):
                         user_name =input("Enter reciepent's username : ")
                         amt = int(input("Enter the amount: "))
-                        user = users.get(user_name,None) # Fetches the given input username from dictionary if it exists there
+                        user = users.get(user_name,None) # Get method Fetches the given input username from dictionary if it exists there
                         if user is None:
                             print("User Not Found.") #If get method returns none username is not present in dictionary  
                             continue
@@ -121,7 +121,7 @@ def main():
                             print (f"\n Amount Transfered Successfully! \n Balance = {obj.balance}")
                         elif (amt < 1):
                             print(f"\n You cannot transfer amount less than 1. \n Current Balance = {obj.balance}")
-                         # If username exists checks the validity of ammount that can be transfered based on available baalance and transfers amount from balance of one account object to balance of another account object   
+                         # If username exists we check the validity of ammount that can be transfered based on available balance and transfer amount from balance of one account object to balance of another account object   
                     elif(c=="4"):
                         print(f"\n Current Balance = {obj.viewbalance()}")
 
@@ -129,7 +129,7 @@ def main():
                         print(f"{obj.getuserinfo()}")
                         
                     elif(c=="6"):
-                            break # Returns to main menu
+                            break # Return to main menu
                         
                     else:
                         print("\n Invalid Input, Try Again.\n")
