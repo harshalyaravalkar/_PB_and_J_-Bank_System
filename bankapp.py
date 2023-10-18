@@ -12,7 +12,7 @@ class Bank():
         s.age = Age
         Bank.__usercount += 1
         s.accountno = 123400 + Bank.__usercount 
-        #concatenated usercount with some initial characters which are "branch no" and "bank no" to obtain legit Account Number
+    '''concatenated usercount with some initial characters which are "branch no" and "bank no" to obtain legit Account Number'''
 
     def deposite(s,amount):
         s.amount = amount
@@ -51,7 +51,7 @@ def main():
         print("WELCOME TO PB&J BANK".center(40,"-"))
         print("Digital Banking Service".center(40,"~"))
         print("\nUser wants to \n1. Create Account \n2. Login \n3. Exit")
-        # Above is our main menu where user creates a bank account
+    ''' Above is our main menu where user creates a bank account'''
         c = input("Enter your selection: ")
 
         if(c=="1"):
@@ -76,7 +76,9 @@ def main():
             # This code above ensures Age input is numeric and above or equal to 18
             
             users[name] = Bank(name,pin,gender,Age) 
-            #created an object of class Bank with all login attributes and giving it a key of name and adds this key_value pair to the dictionary "users" we created in beginning
+            
+        '''created an object of class Bank with all login attributes and giving it a key of name and adds this key_value pair
+        to the dictionary "users" we created in beginning'''
 
         elif(c=="2"):
             name = input("Enter Your username: ")
@@ -121,7 +123,10 @@ def main():
                             print (f"\n Amount Transfered Successfully! \n Balance = {obj.balance}")
                         elif (amt < 1):
                             print(f"\n You cannot transfer amount less than 1. \n Current Balance = {obj.balance}")
-                         # If username exists we check the validity of ammount that can be transfered based on available balance and transfer amount from balance of one account object to balance of another account object   
+                            
+                    ''' If username exists we check the validity of ammount that can be transfered based on available balance and transfer amount 
+                    from balance of one account object to balance of another account object '''
+                    
                     elif(c=="4"):
                         print(f"\n Current Balance = {obj.viewbalance()}")
 
